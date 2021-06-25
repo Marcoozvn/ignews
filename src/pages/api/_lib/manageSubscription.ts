@@ -32,7 +32,6 @@ export async function saveSubscription(subscriptionId: string, customerId: strin
       )
     );
   } else {
-    console.log('vai atualizar')
     await fauna.query(
       query.Replace(
         query.Select(
